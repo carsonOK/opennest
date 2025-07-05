@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenNest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>OpenNest</h1>
+    <p>A curated home for free and open Android apps.</p>
+    <div class="search-bar-container">
+      <input type="text" id="searchInput" placeholder="Search apps..." />
+    </div>
+    <p id="noResults" style="display: none; text-align: center; margin-top: 2rem; color: #6e6e73;">No apps found.</p>
+  </header>
+
+  <main class="app-list" id="appList">
+    <!-- App cards will be dynamically inserted here -->
+  </main>
+
+  <footer>
+    <p>© 2025 OpenNest. Built with 💙 by CarsonOK.</p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const appList = document.getElementById("appList");
+    const noResults = document.getElementById("noResults");
+
+    // Load apps.json and create app cards
+    fetch("apps.json")
+      .then(response => response.json())
+      .then(apps => {
+        apps.forEach(app => {
+          const card = document.createElement("div");
+          card.className = "app-card";
+
+          card.innerHTML = `
+            <img src="${app["app-logo"]}" alt="${app["app-name"]} Icon" class="app-icon" />
+            <div class="app-details">
+              <h2>${app["app-name"]}</h2>
+              <p>${app["app-desc"]}</p>
+              <a href="${app["app-apk"]}" download class="download-btn">GET</a>
+            </div>
+          `;
+
+          appList.appendChild(card);
+        });
+
+        // After loading cards, attach search event listener
+        attachSearchHandler();
+      })
+      .catch(err => {
+        console.error("Failed to load apps.json:", err);
+        appList.innerHTML = "<p style='text-align:center;color:#6e6e73;'>Failed to load app list.</p>";
+      });
+
+    function attachSearchHandler() {
+      searchInput.addEventListener("input", () => {
+        const query = searchInput.value.toLowerCase();
+        const cards = document.querySelectorAll(".app-card");
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const title = card.querySelector(".app-details h2")?.textContent.toLowerCase() || "";
+          const description = card.querySelector(".app-details p")?.textContent.toLowerCase() || "";
+          const combinedText = `${title} ${description}`;
+
+          if (combinedText.includes(query)) {
+            card.style.display = "";
+            visibleCount++;
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        noResults.style.display = visibleCount === 0 ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+</html>

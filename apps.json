@@ -1,0 +1,62 @@
+[
+  {
+    "app-name": "NewPipe",
+    "app-desc": "The lightweight YouTube experience for Android.",
+    "app-apk": "apks/NewPipe_v0.27.7.apk",
+    "app-logo": "https://newpipe.net/img/logo_app.svg"
+  },
+  {
+    "app-name": "Aegis Authenticator",
+    "app-desc": "A free, secure and open source app for Android to manage your 2-step verification tokens.",
+    "app-apk": "apks/aegis-v3.4.apk",
+    "app-logo": "https://raw.githubusercontent.com/beemdevelopment/Aegis/master/metadata/en-US/images/icon.png"
+  },
+  {
+    "app-name": "VLC for Android",
+    "app-desc": "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
+    "app-apk": "apks/org.videolan.vlc_13060507.apk",
+    "app-logo": "https://code.videolan.org/uploads/-/system/group/avatar/9/largeVLC.png"
+  },
+  {
+    "app-name": "Termux",
+    "app-desc": "A terminal emulator application for Android OS extendible by variety of packages.",
+    "app-apk": "apks/com.termux_1021.apk",
+    "app-logo": "https://f-droid.org/repo/com.termux/en-US/icon_7jMZ7XD80oeucmGEaTwktIRZexLtGWvJfKdVD6Wu2SI=.png"
+  },
+  {
+    "app-name": "AnySoftKeyboard",
+    "app-desc": "Fully customizable open-source keyboard.",
+    "app-apk": "https://github.com/AnySoftKeyboard/AnySoftKeyboard/releases/download/1.11-r1/ime-app-7137.apk",
+    "app-logo": "https://f-droid.org/repo/com.menny.android.anysoftkeyboard/en-US/icon.png"
+  },
+  {
+    "app-name": "Organic Maps",
+    "app-desc": "Organic Maps is a privacy-first offline maps & GPS app for hiking, cycling, biking, and driving. Absolutely free. No ads. No tracking. Developed with love by the open-source community. Powered by OpenStreetMap data.",
+    "app-apk": "https://github.com/organicmaps/organicmaps/releases/download/2025.06.26-3-android/OrganicMaps-25062603-web-release.apk",
+    "app-logo":"https://avatars.githubusercontent.com/u/76659619?s=48&v=4"
+  },
+  {
+    "app-name": "Infinity for Reddit",
+    "app-desc": "A Reddit client on Android written in Java. It does not have any ads and it features a clean UI and smooth browsing experience",
+    "app-apk": "https://github.com/Docile-Alligator/Infinity-For-Reddit/releases/download/v7.5.1/Infinity+-v7.5.1.apk",
+    "app-logo": "https://raw.githubusercontent.com/Docile-Alligator/Infinity-For-Reddit/master/fastlane/metadata/android/en-US/images/icon.png"
+  },
+  {
+    "app-name": "KeePassDX",
+    "app-desc": "Edit encrypted keys and digital identities in a single KeePass file and fill out forms securely.",
+    "app-apk": "https://f-droid.org/repo/com.kunzisoft.keepass.libre_132.apk",
+    "app-logo": "https://www.keepassdx.com/assets/img/logotype.svg"
+  },
+  {
+    "app-name": "AntennaPod",
+    "app-desc": "AntennaPod is a podcast player that is completely open. The app is open-source and you can subscribe to any RSS feed. ",
+    "app-apk": "https://f-droid.org/repo/de.danoeh.antennapod_3080095.apk",
+    "app-logo": "https://play-lh.googleusercontent.com/rPV_M6TAsWimm2n-4_tcpEpW0RQSI0cJNHmoXcEvc2NI_LXv2AthzcyRrLT0baN9Elg=w240-h480-rw"
+  },
+    {
+    "app-name": "Fennec",
+    "app-desc": "Fennec F-Droid is based on the latest Mozilla Firefox release. It has proprietary bits and telemetry removed, but still connects to various Mozilla services that can track users.",
+    "app-apk": "https://f-droid.org/repo/org.mozilla.fennec_fdroid_1400020.apk",
+    "app-logo": "https://f-droid.org/repo/org.mozilla.fennec_fdroid/en-US/icon_RCxqbONQXgoTeWvoYAQjC0nmDVTlBoCXvzZ1Rx27gRM=.png"
+  }
+]

@@ -1,0 +1,119 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f2f2f7;
+  color: #1c1c1e;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #6e6e73;
+  margin-top: 0.5rem;
+}
+
+.app-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.app-card {
+  display: flex;
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-3px);
+}
+
+.app-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.app-details h2 {
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 0.4rem;
+}
+
+.app-details p {
+  font-size: 1rem;
+  color: #5e5e60;
+  margin-bottom: 0.7rem;
+}
+
+.download-btn {
+  background: #007aff;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,122,255,0.3);
+}
+
+.download-btn:hover {
+  background: #005edb;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #8e8e93;
+}
+
+.search-bar-container {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+#searchInput {
+  margin-top: 5px;
+  width: 100%;
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  background-color: #fff;
+  color: #1c1c1e;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+#searchInput:focus {
+  box-shadow: 0 0 0 3px rgba(0,122,255,0.2);
+}
