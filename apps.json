@@ -12,18 +12,6 @@
     "app-logo": "https://raw.githubusercontent.com/beemdevelopment/Aegis/master/metadata/en-US/images/icon.png"
   },
   {
-    "app-name": "VLC for Android",
-    "app-desc": "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
-    "app-apk": "apks/org.videolan.vlc_13060507.apk",
-    "app-logo": "https://code.videolan.org/uploads/-/system/group/avatar/9/largeVLC.png"
-  },
-  {
-    "app-name": "Termux",
-    "app-desc": "A terminal emulator application for Android OS extendible by variety of packages.",
-    "app-apk": "apks/com.termux_1021.apk",
-    "app-logo": "https://f-droid.org/repo/com.termux/en-US/icon_7jMZ7XD80oeucmGEaTwktIRZexLtGWvJfKdVD6Wu2SI=.png"
-  },
-  {
     "app-name": "AnySoftKeyboard",
     "app-desc": "Fully customizable open-source keyboard.",
     "app-apk": "https://github.com/AnySoftKeyboard/AnySoftKeyboard/releases/download/1.11-r1/ime-app-7137.apk",
